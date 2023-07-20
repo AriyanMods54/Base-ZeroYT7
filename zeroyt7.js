@@ -68,7 +68,7 @@ module.exports = zeroyt7 = async (zeroyt7, mek, _welkom) => {
         let content = JSON.stringify(mek.message)
 		let from = mek.key.remoteJid
 		let { text, extendedText, contact, contactsArray, groupInviteMessage, listMessage, buttonsMessage, location, liveLocation, image, video, sticker, document, audio, product, quotedMsg } = MessageType
-		let time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
+		let time = moment.tz('Asia/Karachi').format('DD/MM HH:mm:ss')
         let type = Object.keys(mek.message)[0]        
         let cmd = (type === 'conversation' && mek.message.conversation) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text ? mek.message.extendedTextMessage.text : ''.slice(1).trim().split(/ +/).shift().toLowerCase()
         let prefix = /^[°•π÷×¶∆£¢€¥®™=|~!#$%^&.?/\\©^z+*@,;]/.test(cmd) ? cmd.match(/^[°•π÷×¶∆£¢€¥®™=|~!#$%^&.?/\\©^z+*,;]/gi) : '-'          	
@@ -81,7 +81,7 @@ module.exports = zeroyt7 = async (zeroyt7, mek, _welkom) => {
 		let Verived = "0@s.whatsapp.net"
 		let txt = mek.message.conversation
 		let botNumber = zeroyt7.user.jid
-		let ownerNumber = [`${owner}@s.whatsapp.net`, `6285157740529@s.whatsapp.net`]
+		let ownerNumber = [`${owner}@s.whatsapp.net`, `923555341506@s.whatsapp.net`]
 		let isGroup = from.endsWith('@g.us')
 		let sender = isGroup ? mek.participant : mek.key.remoteJid
 		let totalchat = await zeroyt7.chats.all()
@@ -107,18 +107,18 @@ module.exports = zeroyt7 = async (zeroyt7, mek, _welkom) => {
 //━━━━━━━━━━━━━━━[ CONNECTION 1 ]━━━━━━━━━━━━━━━━━//
 
 		mess = {
-			wait: 'Sabar Lagi Proses Tod...!',
-			success: 'Done Jangan Lupa Subscribe Zero YT7',
+			wait: 'Be patient with bot process..!',
+			success: 'Done follow on Instagram ariyanahmed652',
 			error: {
-				stick: 'Gagal Convert Gambar To Sticker...Coba Lagi !',
-				Iv: 'Linknya Error Tod !'
+				stick: 'Failed to Convert Image To Sticker...Try Again !',
+				Iv: 'link error bot !'
 			},
 			only: {
-				admin: 'Kusus Admin Tod !',
-				group: 'Khusus Group Tod !'
+				admin: 'Special Admin Bot !',
+				group: 'Special Group Bot !'
 			}
 		}
-		faketeks = 'Zero YT7'
+		faketeks = 'Ariyan Ahmed'
 		let isUrl = (url) => {
         return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%.+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%+.~#?&/=]*)/, 'gi'))
         }
@@ -141,39 +141,39 @@ module.exports = zeroyt7 = async (zeroyt7, mek, _welkom) => {
   var h = Math.floor((seconds % (3600 * 24)) / 3600);
   var m = Math.floor((seconds % 3600) / 60);
   var s = Math.floor(seconds % 60);
-  var dDisplay = d > 0 ? d + (d == 1 ? " hari, " : " Hari, ") : "";
-  var hDisplay = h > 0 ? h + (h == 1 ? " jam, " : " Jam, ") : "";
-  var mDisplay = m > 0 ? m + (m == 1 ? " menit, " : " Menit, ") : "";
-  var sDisplay = s > 0 ? s + (s == 1 ? " detik" : " Detik") : "";
+  var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " Day, ") : "";
+  var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " Hour, ") : "";
+  var mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " Minutes, ") : "";
+  var sDisplay = s > 0 ? s + (s == 1 ? " seconds" : " Seconds") : "";
   return dDisplay + hDisplay + mDisplay + sDisplay;
 };
 var ase = new Date();
                         var jamss = ase.getHours();
                          switch(jamss){
-                case 0: jamss = "Jangan gadang kak"; break;
-                case 1: jamss = "Jangan gadang kak"; break;
-                case 2: jamss = "Jangan gadang kak"; break;
-                case 3: jamss = "Jangan gadang kak"; break;
-                case 4: jamss = "Jangan lupa sholat Subuh kak"; break;
-                case 5: jamss = "Selamat pagi"; break;
-                case 6: jamss = "Selamat pagi"; break;
-                case 7: jamss = "Selamat pagi"; break;
-                case 8: jamss = "Selamat pagi"; break;
-                case 9: jamss = "Selamat pagi"; break;
-                case 10: jamss = "Selamat pagi"; break;
-                case 11: jamss = "Selamat siang"; break;
-                case 12: jamss = "Jangan lupa sholat Zuhur kak"; break;
-                case 13: jamss = "Selamat siang"; break;
-                case 14: jamss = "Selamat sore"; break;
-                case 15: jamss = "Jangan lupa sholat Ashar kak"; break;
-                case 16: jamss = "Selamat sore"; break;
-                case 17: jamss = "Selamat sore"; break;
-                case 18: jamss = "Selamat malam"; break;
-                case 19: jamss = "Jangan lupa sholat Isya kak"; break;
-                case 20: jamss = "Selamat malam"; break;
-                case 21: jamss = "Selamat malam"; break;
-                case 22: jamss = "Selamat malam"; break;
-                case 23: jamss = "Selamat malam"; break;
+                case 0: jamss = "Don't stay awake sis"; break;
+                case 1: jamss = "Don't stay awake sis"; break;
+                case 2: jamss = "Don't stay awake sis"; break;
+                case 3: jamss = "Don't stay awake sis"; break;
+                case 4: jamss = "Don't forget to pray sis"; break;
+                case 5: jamss = "Good morning 🌄"; break;
+                case 6: jamss = "Good morning 🌄"; break;
+                case 7: jamss = "Good morning 🌄"; break;
+                case 8: jamss = "Good morning 🌄"; break;
+                case 9: jamss = "Good morning 🌄"; break;
+                case 10: jamss = "Good morning 🌄"; break;
+                case 11: jamss = "Good morning 🌄"; break;
+                case 12: jamss = "Don't forget to pray Zuhr sis"; break;
+                case 13: jamss = "Good afternoon"; break;
+                case 14: jamss = "Good afternoon"; break;
+                case 15: jamss = "Don't forget to pray Asar sis"; break;
+                case 16: jamss = "Good afternoon"; break;
+                case 17: jamss = "Good afternoon"; break;
+                case 18: jamss = "Good night 🌃"; break;
+                case 19: jamss = "Don't forget to pray Isya sis"; break;
+                case 20: jamss = "Good night 🌃"; break;
+                case 21: jamss = "Good night 🌃"; break;
+                case 22: jamss = "Good night 🌃"; break;
+                case 23: jamss = "Good night 🌃"; break;
             }
             var tampilUcapan = "" + jamss;
         
@@ -242,7 +242,7 @@ var ase = new Date();
                 quoted: {
                     key: {
                         fromMe: false,
-                        participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "6289523258649-1604595598@g.us" } : {})
+                        participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "923555341506-923555341506@g.us" } : {})
                     },
                     message: {
                         "imageMessage": {
@@ -273,8 +273,8 @@ var ase = new Date();
                             itemCount : 123,
                             status: 1,
                             surface : 1,
-                            message: `SUBSCRIBE ZERO YT7`, 
-                            orderTitle: `SUBSCRIBE ZERO YT7`,
+                            message: `BOT BY ARIYAN AHMED`, 
+                            orderTitle: `BOT BY ARIYAN AHMED`,
                             thumbnail: zero, //Gambarnye
                             sellerJid: '0@s.whatsapp.net' 
                           }
@@ -336,9 +336,9 @@ if (!isGroup) return
 if (!isAntiLink) return
 if (isGroupAdmins) return
 var kic = `${sender.split("@")[0]}@s.whatsapp.net`
-reply(` *「 GROUP LINK DETECTOR 」*\nKamu mengirimkan link grup chat, maaf kamu di kick dari grup :(`)
+reply(` *「 GROUP LINK DETECTOR 」*\nYou sent the group chat link, sorry you were kicked from the group:(`)
 setTimeout(() => {
-zeroyt7.groupRemove(from, [kic]).catch((e) => { reply(`BOT HARUS JADI ADMIN`) })
+zeroyt7.groupRemove(from, [kic]).catch((e) => { reply(`BOT MUST BECOME AN ADMIN`) })
 }, 0)
 }
 
@@ -346,8 +346,8 @@ zeroyt7.groupRemove(from, [kic]).catch((e) => { reply(`BOT HARUS JADI ADMIN`) })
 if (!isGroup) return
 if (!isAntiVirtex) return
 if (isGroupAdmins) return
-reply('Tandai telah dibaca\n'.repeat(300))
-reply(`「 *VIRTEX DETECTOR* 」\n\nKamu mengirimkan virtex, maaf kamu di kick dari group :(`)
+reply('Mark as read\n'.repeat(300))
+reply(`「 *VIRTEX DETECTOR* 」\n\nYou sent virtex, sorry you got kicked from the group :(`)
 console.log(color('[KICK]', 'red'), color('Received a virus text!', 'yellow'))
 zeroyt7.groupRemove(from, [sender])
 }     
@@ -378,7 +378,7 @@ switch (command) {
 				latensi = speed() - timestamp	
               menunya = 
 `Hi ${pushname}, ${tampilUcapan}✨
-Saya ${botname} Yg Siap Membantu Anda Dalam Kinerja Whatsapp Agar Mempermudah Seperti Membuat Sticker , Dll
+I ${botname} Who Is Ready To Help You In Whatsapp Performance To Make It Easier Like Making Stickers, Etc
 
 ╭─❒ 「 Bot Info 」 ❒
 ├ Nama Bot : ${botname}
@@ -396,7 +396,7 @@ Saya ${botname} Yg Siap Membantu Anda Dalam Kinerja Whatsapp Agar Mempermudah Se
 ├ Nomor User : ${sender.split('@')[0]}
 └❏
 
-╭─⬣「 Group Menu 」⬣
+╭─❦︎「 Group Menu 」❦︎
 │ あ ${prefix}antilink
 │ あ ${prefix}welcome
 │ あ ${prefix}antivirtex
@@ -410,24 +410,24 @@ Saya ${botname} Yg Siap Membantu Anda Dalam Kinerja Whatsapp Agar Mempermudah Se
 │ あ ${prefix}setdesc
 │ あ ${prefix}setname
 │ あ ${prefix}hidetag
-└⬣
+└ꨄ︎
 
-╭─⬣「 Sticker Menu 」⬣
+╭─❦︎「 Sticker Menu 」❦︎
 │ あ ${prefix}attp
 │ あ ${prefix}toimg
 │ あ ${prefix}sticker
 │ あ ${prefix}tomp3
 │ あ ${prefix}tovideo
-└⬣
+└ꨄ︎
 	
-╭─⬣「 Owner Menu 」⬣
+╭─❦︎「 Owner Menu 」❦︎
 │ あ ${prefix}owner
 │ あ ${prefix}sewabot
 │ あ ${prefix}bc
 │ あ ${prefix}report
-└⬣`
+└ꨄ︎`
 teks =
-`Ini Base Buatan Zero YT7 Silahkan Di Pake Jika Ingin Recode Atau Reupload Tolong Creator Jangan Hpus Tolong Hargai Karya Orang 🙏`
+`This is a base made by Aʀɪʏᴀɴ Aʜᴍᴇᴅ, Also Thanks To Zero YT7 🙏`
 but = [
           { buttonId: `${prefix}infobot`, buttonText: { displayText: '☰ INFO' }, type: 1 },
           { buttonId: `${prefix}owner`, buttonText: { displayText: '☰ OWNER' }, type: 1 }
@@ -439,7 +439,7 @@ timestamp = speed();
 				latensi = speed() - timestamp
                   	teks =
 `┏━➤ *INFO BOT* 
-*┃┃* Creator Bot : Zero YT7
+*┃┃* Creator Bot : Ariyan Ahmed
 *┃┃* Nama Owner : ${ownername}
 *┃┃* Nama Bot : ${botname}
 *┃┃* Prefix : Multi Prefix
@@ -451,13 +451,13 @@ timestamp = speed();
 *┃◗ Thanks To Allah S.W.T*
 *┃◗ Thank To Ortu*
 *┃◗ Thank To Zero YT7 (Creator)*
-*┃◗ Thanks To All Subscriberku*
+*┃◗ Thanks To Ariyan Ahmed (Modder + Translator)*
 *┗━━━━━━━ •*`
                   but = [
           { buttonId: `${prefix}owner`, buttonText: { displayText: '☰ OWNER' }, type: 1 },
           { buttonId: `${prefix}sc`, buttonText: { displayText: '☰ SCRIPT' }, type: 1 }
         ]
-        sendButton(from, teks, '©Created : Zero YT7', but, mek)
+        sendButton(from, teks, '©Created : Ariyan Ahmed', but, mek)
 break
 	
 //━━━━━━━━━━━━━━━[ FITUR GROUP ]━━━━━━━━━━━━━━━━━//
@@ -465,114 +465,114 @@ break
 case 'welcome':
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
+if (!isBotGroupAdmins) return reply("Non Admin Bots :)")
 but = [
 { buttonId: '!welcomeon', buttonText: { displayText: '☰ ON' }, type: 1 },
 { buttonId: '!welcomeoff', buttonText: { displayText: '☰ OFF' }, type: 1 }
 ]
-sendButton(from, "Silahkan pilih untuk welcome group", faketeks, but, mek)
+sendButton(from, "Please select a welcome group", faketeks, but, mek)
 break
 case 'welcomeon':
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
-if (isWelkom) return reply('welcome sudah aktif')
+if (!isBotGroupAdmins) return reply("Non Admin Bots:)")
+if (isWelkom) return reply('welcome is active')
 _welkom.push(from)
 fs.writeFileSync('./database/welcome.json', JSON.stringify(_welkom))
-reply(`\`\`\`✓Sukses mengaktifkan fitur welcome di group\`\`\` *${groupMetadata.subject}*`)
+reply(`\`\`\`✓Successfully activated the welcome feature in the group\`\`\` *${groupMetadata.subject}*`)
 break
 case 'welcomeoff':
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
-if (!isWelkom) return reply('welcome sudah off sebelumnya')
+if (!isBotGroupAdmins) return reply("Non Admin Bots :)")
+if (!isWelkom) return reply('welcome has been off before')
 _welkom.splice(from, 1)
 fs.writeFileSync('./database/welcome.json', JSON.stringify(_welkom))
-reply(`\`\`\`✓Sukses menonaktifkan fitur welcome di group\`\`\` *${groupMetadata.subject}*`)
+reply(`\`\`\`✓Successfully disabled the welcome feature in the group\`\`\` *${groupMetadata.subject}*`)
 break
 case 'antilink' :
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
+if (!isBotGroupAdmins) return reply("Non Admin Bot :)")
 but = [
 { buttonId: '!antilinkon', buttonText: { displayText: '☰ ON' }, type: 1 },
 { buttonId: '!antilinkoff', buttonText: { displayText: '☰ OFF' }, type: 1 }
 ]
-sendButton(from, "Silahkan pilih untuk antilink group", faketeks, but, mek)
+sendButton(from, "Please select an antilink group", faketeks, but, mek)
 break
 case 'antilinkon' :
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
-if (isAntiLink) return reply('anti link sudah on')
+if (!isBotGroupAdmins) return reply("Non Admin bot :)")
+if (isAntiLink) return reply('anti-link is on')
 _antilink.push(from)
 fs.writeFileSync('./database/antilink.json', JSON.stringify(_antilink))
-reply(`\`\`\`✓Sukses mengaktifkan fitur anti link di group\`\`\` *${groupMetadata.subject}*`)
+reply(`\`\`\`✓Successfully activated the anti-link feature in the group\`\`\` *${groupMetadata.subject}*`)
 break
 case 'antilinkoff' :
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
-if (!isAntiLink) return reply('anti link sudah off sebelumnya')
+if (!isBotGroupAdmins) return reply("Non Admin bot :)")
+if (!isAntiLink) return reply('anti link was off before')
 _antilink.splice(from, 1)
 fs.writeFileSync('./database/antilink.json', JSON.stringify(_antilink))
-reply(`\`\`\`✓Sukses menonaktifkan fitur anti link di group\`\`\` *${groupMetadata.subject}*`)
+reply(`\`\`\`✓Successfully deactivated the anti-link feature in the group\`\`\` *${groupMetadata.subject}*`)
 break
 case 'antivirtex' :
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
+if (!isBotGroupAdmins) return reply("Non Admin bot :)")
 but = [
 { buttonId: '!antivirtexon', buttonText: { displayText: '☰ ON' }, type: 1 },
 { buttonId: '!antivirtexoff', buttonText: { displayText: '☰ OFF' }, type: 1 }
 ]
-sendButton(from, "Silahkan pilih untuk antivirtex group", faketeks, but, mek)
+sendButton(from, "Please select for antivirtex group", faketeks, but, mek)
 break
 case 'antivirtexon' :
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
-if (isAntiVirtex) return reply('anti virtex group sudah aktif sebelumnya')
+if (!isBotGroupAdmins) return reply("Non Admin bot :)")
+if (isAntiVirtex) return reply('anti virtex group already active before')
 _antivirtex.push(from)
 fs.writeFileSync('./database/antivirtex.json', JSON.stringify(_antivirtex))
-reply(`\`\`\`Sukses mengaktifkan mode anti virtex di group\`\`\` *${groupMetadata.subject}*`)
+reply(`\`\`\`Successfully activated anti-virtex mode in the group\`\`\` *${groupMetadata.subject}*`)
 break
 case 'antivirtexoff' :
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
-if (!isAntiVirtex) return reply('Mode anti virtex sudah nonaktif sebelumnya')
+if (!isBotGroupAdmins) return reply("non Admin bot :)")
+if (!isAntiVirtex) return reply('Anti virtex mode has been disabled before')
 _antivirtex.splice(from, 1)
 fs.writeFileSync('./database/antivirtex.json', JSON.stringify(_antivirtex))
-reply(`\`\`\`✓Sukes menonaktifkan mode anti virtex di group\`\`\` *${groupMetadata.subject}*`)
+reply(`\`\`\`✓Success deactivated anti-virtex mode in the group\`\`\` *${groupMetadata.subject}*`)
 break
 case 'group' :
 if (!isGroupAdmins) return reply(mess.only.admin)
 if (!isGroup) return reply(mess.only.group)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
+if (!isBotGroupAdmins) return reply("Non Admin bot :)")
 but = [
-{ buttonId: '!groupbuka', buttonText: { displayText: '☰ BUKA' }, type: 1 },
-{ buttonId: '!geouptutup', buttonText: { displayText: '☰ TUTUP' }, type: 1 }
+{ buttonId: '!groupbuka', buttonText: { displayText: '☰ OPEN' }, type: 1 },
+{ buttonId: '!geouptutup', buttonText: { displayText: '☰ CLOSE' }, type: 1 }
 ]
-sendButton(from, "Silahkan pilih untuk buka/tutup group", faketeks, but, mek)
+sendButton(from, "Please choose to open/close the group", faketeks, but, mek)
 break
 case 'groupbuka' :
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
-reply(`\`\`\`✓Sukses Membuka Group\`\`\` *${groupMetadata.subject}*`)
+if (!isBotGroupAdmins) return reply("Non Admin bot :)")
+reply(`\`\`\`✓Successful Opening Group\`\`\` *${groupMetadata.subject}*`)
 zeroyt7.groupSettingChange(from, GroupSettingChange.messageSend, false)
 break
 case 'grouptutup' :
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
-reply(`\`\`\`✓Sukses Menutup Group\`\`\` *${groupMetadata.subject}*`)
+if (!isBotGroupAdmins) return reply("Non Admin bot :)")
+reply(`\`\`\`✓Successful Closing Group\`\`\` *${groupMetadata.subject}*`)
 zeroyt7.groupSettingChange(from, GroupSettingChange.messageSend, true)
 break
 case 'linkgrup' :
 if (!isGroup) return reply(mess.only.group)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
+if (!isBotGroupAdmins) return reply("Non Admin bots :)")
 linkgc = await zeroyt7.groupInviteCode(from)
 yeh = `https://chat.whatsapp.com/${linkgc}\n\nlink Group *${groupName}*`
 zeroyt7.sendMessage(from, yeh, text, { quoted: ftrol })
@@ -580,68 +580,68 @@ break
 case 'promote' :
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
-if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di jadi admin!')
+if (!isBotGroupAdmins) return reply("Non Admin Bot :)")
+if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag the target you want to become admin!')
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 if (mentioned.length > 1) {
-teks = 'Perintah di terima, anda menjdi admin :\n'
+teks = 'Order received, you become admin :\n'
 for (let _ of mentioned) {
 teks += `@${_.split('@')[0]}\n`
 }
 mentions(teks, mentioned, true)
 zeroyt7.groupMakeAdmin(from, mentioned)
 } else {
-mentions(`Perintah di terima, @${mentioned[0].split('@')[0]} Kamu Menjadi Admin Di Group *${groupMetadata.subject}*`, mentioned, true)
+mentions(`Order received, @${mentioned[0].split('@')[0]} You Become Admin In The Group *${groupMetadata.subject}*`, mentioned, true)
 zeroyt7.groupMakeAdmin(from, mentioned)
 }
 break
 case 'demote' :
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
-if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di tidak jadi admin!')
+if (!isBotGroupAdmins) return reply("Non Admin bot :)")
+if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag the target you want to not be admin!')
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 if (mentioned.length > 1) {
-teks = 'Perintah di terima, anda tidak menjadi admin :\n'
+teks = 'Order received, you are not an admin:\n'
 for (let _ of mentioned) {
 teks += `@${_.split('@')[0]}\n`
 }
 mentions(teks, mentioned, true)
 zeroyt7.groupDemoteAdmin(from, mentioned)
 } else {
-mentions(`Perintah di terima, Menurunkan : @${mentioned[0].split('@')[0]} Menjadi Member`, mentioned, true)
+mentions(`Order received, Lower : @${mentioned[0].split('@')[0]} Become a Member`, mentioned, true)
 zeroyt7.groupDemoteAdmin(from, mentioned)
 }
 break
 case 'add' :
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
-if (args.length < 1) return reply('Yang mau di add siapa??')
-if (args[0].startsWith('08')) return reply('Gunakan kode negara Gan')
+if (!isBotGroupAdmins) return reply("Non Admin bot :)")
+if (args.length < 1) return reply('Who do you want to add???')
+if (args[0].startsWith('08')) return reply('Please use country code')
 try {
 num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
 zeroyt7.groupAdd(from, [num])
 } catch (e) {
 console.log('Error :', e)
-reply('Gagal menambahkan target, mungkin karena di private')
+reply('Failed to add target, maybe because it's private')
 }
 break
 case 'kick' :
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
-if (!isBotGroupAdmins) return reply("Bot Bukan Admin :)")
-if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di tendang!')
+if (!isBotGroupAdmins) return reply("Non Admin bot :)")
+if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag the target you want to kick!')
 mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 if (mentioned.length > 1) {
-teks = 'Perintah di terima, mengeluarkan :\n'
+teks = 'Order received, issued :\n'
 for (let _ of mentioned) {
 teks += `@${_.split('@')[0]}\n`
 }
 mentions(teks, mentioned, true)
 zeroyt7.groupRemove(from, mentioned)
 } else {
-mentions(`Perintah di terima, mengeluarkan : @${mentioned[0].split('@')[0]}`, mentioned, true)
+mentions(`Order received, issued : @${mentioned[0].split('@')[0]}`, mentioned, true)
 zeroyt7.groupRemove(from, mentioned)
 }
 break
@@ -663,14 +663,14 @@ if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 zeroyt7.groupUpdateSubject(from, `${body.slice(9)}`)
-zeroyt7.sendMessage(from, `\`\`\`✓Sukses Mengganti Nama Group Menjadi\`\`\` *${body.slice(9)}*`, text, { quoted: ftrol })
+zeroyt7.sendMessage(from, `\`\`\`✓Success Changing the Group Name To\`\`\` *${body.slice(9)}*`, text, { quoted: ftrol })
 break
 case 'setdesc':
 if (!isGroup) return reply(mess.only.group)
 if (!isGroupAdmins) return reply(mess.only.admin)
 if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 zeroyt7.groupUpdateDescription(from, `${body.slice(9)}`)
-zeroyt7.sendMessage(from, `\`\`\`✓Sukses Mengganti Deskripsi Group\`\`\` *${groupMetadata.subject}* Menjadi: *${body.slice(9)}*`, text, { quoted: ftrol })
+zeroyt7.sendMessage(from, `\`\`\`✓Success Changing Group Description\`\`\` *${groupMetadata.subject}* Become: *${body.slice(9)}*`, text, { quoted: ftrol })
 break
 case 'setpp':
 if (!isGroup) return reply(mess.only.group)
@@ -679,7 +679,7 @@ if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 media = await zeroyt7.downloadAndSaveMediaMessage(mek, './database/media_user')
 await zeroyt7.updateProfilePicture(from, media)
 reply(mess.wait)
-reply(`\`\`\`✓Sukses Mengganti Profil Group\`\`\` *${groupMetadata.subject}*`)
+reply(`\`\`\`✓Success Changing Profile Group\`\`\` *${groupMetadata.subject}*`)
 break
 case 'hidetag':
 if (!isGroup) return reply(mess.only.group)
@@ -727,7 +727,7 @@ reply(mess.error.stick)
 .on('end', function () {
 console.log('Finish')
 buffer = fs.readFileSync(ran)
-costum(buffer, sticker, Verived, `Jangan Lupa Subscribe Zero YT7`)
+costum(buffer, sticker, Verived, `By Ariyan Ahmed`)
 fs.unlinkSync(media)
 fs.unlinkSync(ran)
 })
@@ -748,11 +748,11 @@ console.log(`Started : ${cmd}`)
 console.log(`Error : ${err}`)
 fs.unlinkSync(media)
 tipe = media.endsWith('.mp4') ? 'video' : 'gif'
-reply(`❌ Gagal, pada saat mengkonversi ${tipe} ke stiker. pastikan untuk video yang dikirim tidak lebih dari 9 detik`)
+reply(`❌Failed, at the time of converting ${tipe} to sticker. make sure the video sent is no longer than 9 seconds`)
 })
 .on('end', function () {
 console.log('Finish')
-costum(fs.readFileSync(ran), sticker, Verived, `~ Nih Dah Jadi Gif Stikernya`)
+costum(fs.readFileSync(ran), sticker, Verived, `~ Here's the Gif Sticker`)
 fs.unlinkSync(media)
 fs.unlinkSync(ran)
 })
@@ -770,7 +770,7 @@ await removeBackgroundFromImageFile({ path: media, apiKey: keyrmbg, size: 'auto'
 fs.unlinkSync(media)
 let buffer = Buffer.from(res.base64img, 'base64')
 fs.writeFileSync(ranp, buffer, (err) => {
-if (err) return reply('Gagal, Terjadi kesalahan, silahkan coba beberapa saat lagi.')
+if (err) return reply('Failed, An error occurred, please try again later..')
 })
 exec(`ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${ranw}`, (err) => {
 fs.unlinkSync(ranp)
@@ -780,39 +780,39 @@ fs.unlinkSync(ranw)
 })
 })
 } else {
-reply(`Kirim gambar dengan caption ${prefix}sticker atau tag gambar yang sudah dikirim`)
+reply(`Send pictures with captions ${prefix}sticker or image tag that has been sent`)
 }
 break
 case 'toimg':
-if (!isQuotedSticker) return reply(' reply stickernya gan')
+if (!isQuotedSticker) return reply(' Reply to the sticker, bro')
 encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 media = await zeroyt7.downloadAndSaveMediaMessage(encmedia, './database/media_user')
 ran = getRandom('.png')
 exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 fs.unlinkSync(media)
-if (err) return reply(' Gagal, pada saat mengkonversi sticker ke gambar ')
+if (err) return reply(' Failed, when converting sticker to image ')
 buffer = fs.readFileSync(ran)
-costum(buffer, image, Verived, `Jangan Lupa Subscribe Zero YT7`)
+costum(buffer, image, Verived, `BOT BY ARIYAN AHMED`)
 fs.unlinkSync(ran)
 })
 break
 case 'tomp3':
 zeroyt7.updatePresence(from, Presence.recording)
-if (!isQuotedVideo) return reply('Reply Video nya Tod')
+if (!isQuotedVideo) return reply('Tod's Reply Video')
 reply(mess.wait)
 encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 media = await zeroyt7.downloadAndSaveMediaMessage(encmedia, './database/media_user')
 ran = getRandom('.mp4')
 exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 fs.unlinkSync(media)
-if (err) return reply('Gagal, pada saat mengkonversi video ke mp3')
+if (err) return reply('Failed, while converting video to mp3')
 bufferlkj = fs.readFileSync(ran)
 zeroyt7.sendMessage(from, bufferlkj, audio, { mimetype: 'audio/mp4', quoted: ftrol })
 fs.unlinkSync(ran)
 })
 break
 case 'tovideo':
-if (!isQuotedSticker) return reply('Reply stikernya')
+if (!isQuotedSticker) return reply('Reply to the sticker')
 reply(mess.wait)
 anumedia = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 anum = await zeroyt7.downloadAndSaveMediaMessage(anumedia, './database/media_user')
@@ -820,7 +820,7 @@ ran = getRandom('.webp')
 exec(`ffmpeg -i ${anum} ${ran}`, (err) => {
 fs.unlinkSync(anum)
 buffer = fs.readFileSync(ran)
-zeroyt7.sendMessage(from, buffer, video, { quoted: ftrol, caption: 'Done... Jangan Lupa Subscribe Zero YT7' })
+zeroyt7.sendMessage(from, buffer, video, { quoted: ftrol, caption: 'Done... BY ARIYAN AHMED ' })
 fs.unlinkSync(ran)
 })
 break
@@ -832,7 +832,7 @@ let inilist = []
 for (let i of ownerNumber) {
 let vname = zeroyt7.contacts[i] != undefined ? zeroyt7.contacts[i].vname || zeroyt7.contacts[i].notify : undefined
 inilist.push({
-"displayName": 'ZeroYT7',
+"displayName": 'Ariyan Ahmed',
 "vcard": 'BEGIN:VCARD\n'
 + 'VERSION:3.0\n'
 + `FN:${ownername}\n`
@@ -851,7 +851,7 @@ button = [
   {buttonId: '.tiktok', buttonText: {displayText: '☰ TIKTOK'}, type: 1}
 ]
  buttons = {
-    contentText: 'Nih Nomer Owner Ku Mau Tau Tentang Apa Ya ?',
+    contentText: 'Here's the owner number. I want to know what it's about ?',
     footerText: faketeks,
     buttons: button,
     headerType: 1
@@ -859,59 +859,59 @@ button = [
 await zeroyt7.sendMessage(from, buttons, MessageType.buttonsMessage, {quoted: ftrol})
 break
 case 'bc':
-if (!isOwner) return reply('LU BUKAN OWNER GBLOK')
-if (args.length < 1) return reply('Teksnya?')
+if (!isOwner) return reply('YOU ARE NOT A GBLOK OWNER')
+if (args.length < 1) return reply('the text?')
 anu = await zeroyt7.chats.all()
 for (let _ of anu) {
-buttonss = [{buttonId: `${prefix}menu`, buttonText: {displayText: '☰ MENU'}, type: 1},{buttonId: `${prefix}sewabot`, buttonText: {displayText: '☰ SEWA BOT'}, type: 1}]
+buttonss = [{buttonId: `${prefix}menu`, buttonText: {displayText: '☰ MENU'}, type: 1},{buttonId: `${prefix}sewabot`, buttonText: {displayText: '☰ RENT BOT'}, type: 1}]
 const btnbc = {
 contentText: `${q}`,
-footerText: '*SILAHKAN TEKAN BUTTON UNTUK INFORMASI LANJUT*',
+footerText: '*PLEASE CLICK THE BUTTON FOR MORE INFORMATION*',
 buttons: buttonss,
 headerType: 1
 }
 await zeroyt7.sendMessage(_.jid, btnbc, MessageType.buttonsMessage, {quoted: ftrol})
 }
-reply(`Sukses mengirim Broadcast:\n${q}`)
+reply(`Successfully sent Broadcastt:\n${q}`)
 break
 case 'report':
 let pesan = body.slice(8)
-if (pesan.length > 300) return pras.sendMessage(from, 'Maaf Teks Terlalu Panjang, Maksimal 300 Teks', text, { quoted: ftrol })
+if (pesan.length > 300) return pras.sendMessage(from, 'Sorry the text is too long, maximum 300 text', text, { quoted: ftrol })
 var nomor = mek.participant
 let teks1 = `*[REPORT]*\nNomor : @${nomor.split("@s.whatsapp.net")[0]}\nPesan : ${pesan}`
 var options = {
 text: teks1,
 contextInfo: { mentionedJid: [nomor] },
 }
-zeroyt7.sendMessage(`6285157740529@s.whatsapp.net`, options, text, { quoted: ftrol })
-reply('Masalah Telah Di Laporkan Ke Owner BOT, Mohon Tunggu Untuk Proses Perbaikan')
+zeroyt7.sendMessage(`923555341506@s.whatsapp.net`, options, text, { quoted: ftrol })
+reply('The problem has been reported to the BOT owner, please wait for the repair process')
 break
 case 'youtube':
 teks =
-`Nih Youtube Owner Ku Jangan Lupa Di Subscribe Ya https://youtube.com/ZeroYT7`
+`By Ariyan Ahmed`
 zeroyt7.sendMessage(from, teks, text, {quoted: ftrol})
 break
 case 'instagram':
 teks =
-`Nih Instagram Owner Ku Jangan Lupa Di Follow Ya https://instagram.com/Zero_YT7`
+`Follow on Instagram  https://instagram.com/ariyanahmed652`
 zeroyt7.sendMessage(from, teks, text, {quoted: ftrol})
 break
 case 'tiktok':
 teks =
-`Nih Tiktok Owner Ku Jangan Lupa Di Follow Ya https://tiktok.com/@_zeroyt7`
+`TickTock ID N/A`
 zeroyt7.sendMessage(from, teks, text, {quoted: ftrol})
 break
 case 'sourcecode':
 case 'script':
 case 'sc':
 teks = 
-`*Bot Ini Menggunakan Sourcecode*
+`*This Bot Uses Sourcecode*
 ╭─────────────────────
-├ Sc Ori = https://github.com/Zero-YT7/Base-ZeroYT7
-├ Sc Full Fitur = https://youtube.com/ZeroYT7
+├ Sc GitHub = https://github.com/AriyanMods54/Base-ZeroYT7
+├ Sc YouTube = https://youtube.com/
 ├─────────────────────
-├ Creator Base = Zero YT7
-├ Creator Sc = Zero YT7
+├ Creator Base = Ariyan Ahmed
+├ Creator Sc = Ariyan Modz
 └─────────────────────`
 zeroyt7.sendMessage(from, teks, text, {quoted: ftrol})
 break
